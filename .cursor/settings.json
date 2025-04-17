@@ -1,0 +1,52 @@
+{
+  "projectName": "Vitascope PHR",
+  "codeAnalysis": {
+    "linting": {
+      "eslint": {
+        "enabled": true,
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "prettier": {
+        "enabled": true,
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json", ".md"]
+      }
+    },
+    "ai": {
+      "enabled": true,
+      "respectWarnComments": true
+    }
+  },
+  "editor": {
+    "formatOnSave": true,
+    "defaultFormatter": "prettier",
+    "tabSize": 2,
+    "rulers": [100],
+    "wordWrap": "off",
+    "codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "paths": {
+    "rootDir": "./",
+    "srcDir": "./frontend/src",
+    "testDir": "./tests"
+  },
+  "frameworks": {
+    "react": true,
+    "reactNative": true,
+    "typescript": true,
+    "python": true
+  },
+  "rules": {
+    "enabled": true,
+    "paths": [
+      ".cursor/rules/frontend-coding-rule.mdc",
+      ".cursor/rules/backend-coding-rule.mdc"
+    ]
+  },
+  "chat": {
+    "model": "claude-3.5-sonnet",
+    "historySize": 50,
+    "maxTokens": 4096
+  }
+} 
